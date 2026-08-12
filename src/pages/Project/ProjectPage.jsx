@@ -1,6 +1,7 @@
 import { useParams } from 'react-router';
 import projects from '../../data/projects';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
+import ProjectHero from '../../components/ProjectHero/ProjectHero';
 
 function ProjectPage() {
   const { slug } = useParams();
@@ -19,19 +20,7 @@ function ProjectPage() {
 
   return (
   <main>
-    <h1>{project.title}</h1>
-
-    <p>{project.shortDescription}</p>
-
-    <ul>
-      {project.technologies.map((technology) => (
-        <li key={technology}>{technology}</li>
-      ))}
-    </ul>
-
-    <a href={project.links.github}>
-      Voir le code sur GitHub
-    </a>
+    <ProjectHero project={project} />
 
     <section>
       <SectionTitle>Contexte</SectionTitle>
@@ -42,9 +31,7 @@ function ProjectPage() {
       <SectionTitle>Objectifs</SectionTitle>
 
       <ul>
-        {project.objectives.map((objective) => (
-          <li key={objective}>{objective}</li>
-        ))}
+        {project.objectives.map((objective) => (<li key={objective}>{objective}</li>))}
       </ul>
     </section>
   </main>

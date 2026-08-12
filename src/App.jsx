@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router';
 import projects from './data/projects';
+import ProjectPage from './pages/Project/ProjectPage';
 
 function Home() {
   return (
@@ -16,15 +17,11 @@ function Home() {
   );
 }
 
-function Project() {
-  return <h1>Projet</h1>;
-}
-
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/projets/:slug" element={<Project />} />
+      <Route path="/projets/:slug" element={<ProjectPage />} />
     </Routes>
   );
 }

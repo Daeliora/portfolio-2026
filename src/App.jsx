@@ -1,14 +1,18 @@
 import { Routes, Route } from 'react-router';
-import { motion } from 'motion/react';
+import projects from './data/projects';
 
 function Home() {
   return (
-    <motion.h1
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-    >
-      Accueil
-    </motion.h1>
+    <main>
+      <h1>Portfolio</h1>
+
+      {projects.map((project) => (
+        <article key={project.slug}>
+          <h2>{project.title}</h2>
+          <p>{project.shortDescription}</p>
+        </article>
+      ))}
+    </main>
   );
 }
 

@@ -3,157 +3,223 @@ const projects = [
   {
     title: 'Booki',
     slug: 'booki',
-    shortDescription: "Intégration responsive d'une interface de réservation de logements et d'activités.",
+    shortDescription: "Intégration responsive d'une interface de réservation de logements et d'activités à partir de maquettes desktop, tablette et mobile.",
     technologies: ['HTML', 'CSS', 'Responsive Design'],
     image: '/images/booki-cover.webp',
     links: {
       github: 'https://github.com/Daeliora/P2-Booki',
     },
-    context: "Projet d'intégration réalisé dans le cadre de ma formation de développeuse web à partir d'une maquette fournie.",
-    
+    context: "Projet d'intégration réalisé à partir de maquettes fournies pour les versions desktop, tablette et mobile. L'objectif était de transformer ces maquettes en une interface web cohérente, responsive et conforme aux spécifications du projet.",
     objectives: [
-      'Intégrer une interface à partir d’une maquette',
-      'Respecter la structure et les contraintes graphiques fournies',
-      'Adapter l’interface aux différents formats d’écran',
-      'Mettre en place une navigation et des éléments interactifs accessibles',
+      "Intégrer une interface à partir de maquettes UI",
+      "Respecter les versions desktop, tablette et mobile",
+      "Utiliser une structure HTML sémantique",
+      "Créer une mise en page responsive sans framework CSS",
+      "Produire un code conforme aux contraintes du projet",
+    ],
+
+    features: [
+      "Navigation entre les sections Hébergements et Activités",
+      "Interface de recherche",
+      "Filtres visuels",
+      "Cartes d'hébergements et d'activités",
+      "Section des hébergements les plus populaires",
+      "Interface responsive desktop, tablette et mobile",
     ],
 
     technicalStack: [
       {
-        name: 'HTML',
-        description:
-          'Structuration sémantique des différentes sections de la page.',
+        name: "HTML5",
+        description: "Structuration sémantique des différentes sections de l'interface.",
       },
       {
-        name: 'CSS',
-        description:
-          'Mise en forme de l’interface et création de la mise en page responsive.',
+        name: "CSS3",
+        description: "Mise en forme et création de l'interface responsive.",
       },
       {
-        name: 'Responsive Design',
-        description:
-          'Adaptation de l’interface aux différentes tailles d’écran.',
+        name: "Flexbox",
+        description: "Organisation de plusieurs éléments et composants de l'interface.",
+      },
+      {
+        name: "CSS Grid",
+        description: "Mise en page notamment utilisée pour organiser la section des activités.",
+      },
+      {
+        name: "Media Queries",
+        description: "Adaptation de l'interface aux différentes tailles d'écran.",
       },
     ],
 
     skills: [
-      'Intégration HTML/CSS',
-      'Responsive design',
-      'Structuration sémantique',
-      'Reproduction d’une maquette',
-      'Organisation d’une interface web',
+      "Intégration HTML/CSS",
+      "Responsive design",
+      "HTML sémantique",
+      "Flexbox",
+      "CSS Grid",
+      "Intégration à partir d'une maquette",
     ],
 
-    results: "Une interface responsive reproduisant la structure et l'identité visuelle demandées à partir de la maquette.",
+    challenges: [
+      "Reproduire précisément la mise en page des maquettes",
+      "Adapter l'organisation des contenus aux différents formats d'écran",
+      "Maintenir une structure cohérente tout au long de l'intégration",
+    ],
+
+    results: "Une interface responsive reproduisant les maquettes fournies et adaptée aux formats desktop, tablette et mobile.",
     improvements: "Une évolution possible serait de rendre certaines fonctionnalités davantage interactives et de poursuivre l'amélioration de l'accessibilité et des performances.",
   },
 
   {
     title: 'Sophie Bluel',
     slug: 'sophie-bluel',
-    shortDescription: "Développement d'une interface dynamique permettant de gérer une galerie de projets via une API.",
+    shortDescription: "Développement d'une interface dynamique connectée à une API pour afficher, filtrer et administrer une galerie de projets.",
     technologies: ['JavaScript', 'API REST', 'DOM', 'Fetch'],
     image: '/images/sophie-bluel-cover.webp',
     links: {
       github: 'https://github.com/Daeliora/Portfolio-architecte-sophie-bluel',
     },
-    context: "Projet de développement JavaScript réalisé dans le cadre de ma formation. Le repository contient une partie frontend et une partie backend.",
-
+    context: "Projet de développement JavaScript réalisé à partir d'un site initialement statique. L'objectif était de connecter l'interface à une API afin de rendre la galerie dynamique et de permettre à un administrateur de gérer les projets.",
+    
     objectives: [
-      'Dynamiser une interface existante avec JavaScript',
-      'Récupérer et afficher des données provenant d’une API',
-      'Mettre en place des filtres par catégorie',
-      'Développer une interface d’administration permettant de gérer les projets',
+      "Récupérer et afficher des données depuis une API",
+      "Dynamiser une galerie existante avec JavaScript",
+      "Mettre en place des filtres par catégorie",
+      "Développer une interface d'administration",
+      "Gérer l'authentification administrateur",
+    ],
+
+    features: [
+      "Affichage dynamique des projets depuis une API",
+      "Filtres par catégorie",
+      "Authentification administrateur",
+      "Ajout de projets",
+      "Suppression de projets",
+      "Prévisualisation des images avant envoi",
+      "Modale d'administration avec plusieurs vues",
     ],
 
     technicalStack: [
       {
-        name: 'JavaScript',
-        description:
-          'Développement de la logique interactive et manipulation du DOM.',
+        name: "JavaScript",
+        description: "Gestion de la logique interactive, des événements et de l'affichage dynamique.",
       },
       {
-        name: 'API REST',
-        description:
-          'Récupération et modification des données du portfolio via des requêtes HTTP.',
+        name: "Fetch API",
+        description: "Communication avec l'API pour récupérer et modifier les données.",
       },
       {
-        name: 'Fetch',
-        description:
-          'Communication avec l’API pour récupérer et envoyer les données.',
+        name: "DOM API",
+        description: "Création et mise à jour dynamique des éléments de la galerie.",
+      },
+      {
+        name: "FormData",
+        description: "Envoi des informations d'un projet et de son image vers l'API.",
+      },
+      {
+        name: "FileReader",
+        description: "Création d'une prévisualisation de l'image sélectionnée avant son envoi.",
+      },
+      {
+        name: "localStorage",
+        description: "Stockage du token d'authentification côté navigateur.",
       },
     ],
 
     skills: [
-      'Manipulation du DOM',
-      'Appels API',
-      'JavaScript asynchrone',
-      'Gestion des événements',
-      'Authentification',
-      'Création d’une interface d’administration',
+      "JavaScript",
+      "Manipulation du DOM",
+      "API REST",
+      "Programmation asynchrone",
+      "Gestion des événements",
+      "Authentification",
+      "Gestion de fichiers",
     ],
 
-    results: "Une interface dynamique permettant d'afficher les projets depuis l'API, de les filtrer et de les gérer depuis une interface d'administration.",
+    challenges: [
+      "Synchroniser la récupération des données API avec l'affichage de la galerie",
+      "Gérer les différentes vues de la modale d'administration",
+      "Transmettre des images à l'API avec FormData",
+      "Gérer l'authentification et le token côté client",
+    ],
+
+    results: "Une interface dynamique connectée à une API, permettant aux visiteurs de filtrer les réalisations et aux administrateurs de gérer les projets depuis une interface dédiée.",
     improvements: "Une évolution possible serait de poursuivre l'amélioration de l'expérience utilisateur de l'interface d'administration et de renforcer les contrôles de validation des données.",
   },
 
   {
     title: 'Kasa',
     slug: 'kasa',
-    shortDescription: "Développement d'une application de location immobilière avec React.",
-    technologies: ['React', 'React Router', 'Vite', 'Sass'],
+    shortDescription: "Développement d'une application de location immobilière avec React, composants réutilisables et navigation dynamique.",
+    technologies: ['React', 'React Router', 'Vite', 'JavaScript', 'Sass'],
     image: '/images/kasa-cover.webp',
     links: {
       github: 'https://github.com/Daeliora/kasa',
     },
-    context: "Projet de développement front-end réalisé avec React dans le cadre de ma formation de développeuse web.",
+    context: "Projet de développement front-end réalisé avec React à partir de maquettes desktop et mobile. L'objectif était de construire une application moderne et responsive en organisant l'interface autour de composants réutilisables.",
 
     objectives: [
-      'Développer une application avec React',
-      'Créer des composants réutilisables',
-      'Mettre en place la navigation entre les différentes pages',
-      'Respecter une maquette et les contraintes responsive',
+      "Développer une application avec React",
+      "Créer des composants réutilisables",
+      "Mettre en place une navigation dynamique",
+      "Gérer des routes avec paramètres",
+      "Respecter les maquettes desktop et mobile",
+    ],
+
+    features: [
+      "Liste dynamique des logements",
+      "Pages de logements avec routes dynamiques",
+      "Slideshow d'images",
+      "Composants Collapse",
+      "Page À propos",
+      "Page 404",
+      "Interface responsive desktop et mobile",
     ],
 
     technicalStack: [
       {
-        name: 'React',
-        description:
-          "Bibliothèque utilisée pour construire l'interface et organiser l'application en composants.",
+        name: "React",
+        description: "Construction de l'interface à partir de composants réutilisables.",
       },
       {
-        name: 'React Router',
-        description:
-          "Gestion de la navigation entre les différentes pages de l'application.",
+        name: "React Router",
+        description: "Gestion de la navigation et des routes dynamiques de l'application.",
       },
       {
-        name: 'Vite',
-        description:
-          'Outil utilisé pour le développement et la construction du projet front-end.',
+        name: "JavaScript",
+        description: "Gestion des données, du state et de la logique de l'application.",
       },
       {
-        name: 'Sass',
-        description:
-          'Préprocesseur CSS utilisé pour organiser et maintenir les styles du projet.',
+        name: "Sass",
+        description: "Organisation des styles et gestion des variables et de l'imbrication.",
       },
     ],
 
     skills: [
-      'Architecture React',
-      'Création de composants réutilisables',
-      'Gestion de la navigation',
-      'Responsive design',
-      'Organisation d’un projet front-end',
+      "JavaScript",
+      "React",
+      "Création de composants",
+      "Props",
+      "Gestion du state",
+      "Hooks",
+      "React Router",
+      "Routes dynamiques",
+      "Responsive design",
     ],
 
-    results: "Une application de location immobilière développée avec React et structurée autour de composants réutilisables et d'un système de navigation.",
+    challenges: [
+      "Gérer le comportement du slideshow et ses différents cas limites",
+      "Gérer les identifiants de logements inexistants",
+      "Construire une architecture basée sur des composants réutilisables",
+    ],
+
+    results: "Une application responsive structurée autour de composants React réutilisables, avec navigation dynamique, interactions et gestion des erreurs.",
     improvements: "Une évolution possible serait d'ajouter de nouvelles fonctionnalités interactives et de poursuivre l'amélioration de l'expérience utilisateur.",
   },
 
   {
     title: 'Mon Vieux Grimoire',
     slug: 'mon-vieux-grimoire',
-    shortDescription: "Développement du back-end d'une application de notation et de gestion de livres.",
+    shortDescription: "Développement d'une API REST sécurisée pour une application de partage et de notation de livres.",
     technologies: [
       'Node.js',
       'Express',
@@ -167,56 +233,71 @@ const projects = [
     links: {
       github: 'https://github.com/Daeliora/Mon-vieux-grimoire',
     },
-    context: "Projet back-end réalisé dans le cadre de ma formation. L'objectif était de développer l'API d'une application permettant aux utilisateurs de gérer et noter des livres.",
+    context: "Projet back-end réalisé dans le cadre de ma formation. Le frontend React était fourni ; mon travail a consisté à développer l'API, la base de données, l'authentification, la gestion des images et le système de notation.",
 
     objectives: [
-      'Développer une API REST',
-      'Mettre en place une base de données MongoDB',
-      'Gérer l’authentification des utilisateurs',
-      'Créer les fonctionnalités de gestion des livres et des notations',
-      'Sécuriser et optimiser le traitement des images',
+      "Développer une API REST",
+      "Mettre en place une base de données MongoDB",
+      "Gérer l'authentification des utilisateurs",
+      "Sécuriser les accès aux ressources",
+      "Gérer les images envoyées par les utilisateurs",
+      "Développer un système de notation",
+    ],
+
+    features: [
+      "Inscription et connexion des utilisateurs",
+      "Création, modification et suppression de livres",
+      "Système de notation",
+      "Classement des livres les mieux notés",
+      "Contrôle des droits des utilisateurs",
+      "Upload et optimisation des images",
     ],
 
     technicalStack: [
       {
-        name: 'Node.js / Express',
-        description:
-          'Création du serveur et développement des différentes routes de l’API.',
+        name: "Node.js / Express",
+        description: "Création du serveur et développement de l'API REST.",
       },
       {
-        name: 'MongoDB / Mongoose',
-        description:
-          'Stockage et gestion des données de l’application dans une base de données MongoDB.',
+        name: "MongoDB / Mongoose",
+        description: "Stockage et gestion des données de l'application.",
       },
       {
-        name: 'JWT / bcrypt',
-        description:
-          'Gestion de l’authentification et sécurisation des mots de passe.',
+        name: "JWT / bcrypt",
+        description: "Authentification des utilisateurs et sécurisation des mots de passe.",
       },
       {
-        name: 'Multer / Sharp',
-        description:
-          'Gestion, traitement et optimisation des images envoyées par les utilisateurs.',
+        name: "Multer / Sharp",
+        description: "Gestion, redimensionnement et conversion des images en WebP.",
       },
     ],
 
     skills: [
-      'Création d’une API REST',
-      'Conception de routes Express',
-      'Gestion d’une base MongoDB',
-      'Authentification',
-      'Sécurisation des données',
-      'Gestion et optimisation des images',
+      "Node.js",
+      "Express",
+      "API REST",
+      "MongoDB",
+      "Mongoose",
+      "Authentification JWT",
+      "Sécurisation des données",
+      "Gestion des fichiers",
     ],
 
-    results: "Une API fonctionnelle permettant notamment la création de comptes, l'authentification, la gestion des livres et des notations.",
+    challenges: [
+      "Sécuriser l'authentification et les ressources protégées",
+      "Vérifier les droits des utilisateurs sur leurs propres livres",
+      "Gérer les uploads et optimiser les images",
+      "Éviter l'accumulation de fichiers inutilisés",
+    ],
+
+    results: "Une API REST sécurisée permettant de gérer les utilisateurs, les livres, les notations et les images, avec stockage des données dans MongoDB.",
     improvements: "Une évolution possible serait d'enrichir les fonctionnalités de l'API et de poursuivre le renforcement des mécanismes de sécurité et de validation.",
   },
 
   {
     title: 'Nina Carducci',
     slug: 'nina-carducci',
-    shortDescription: "Optimisation d'un site de photographe pour améliorer son référencement, ses performances et son accessibilité.",
+    shortDescription: "Audit et optimisation d'un site existant autour de la performance, du SEO, de l'accessibilité et de la correction de bugs.",
     technologies: [
       'SEO',
       'Accessibilité',
@@ -229,49 +310,86 @@ const projects = [
     links: {
       github: 'https://github.com/Daeliora/P4_Nina-Carducci-WebSite',
     },
-    context: "Projet d'optimisation d'un site web existant réalisé dans le cadre de ma formation.",
+    context: "Projet d'audit et d'optimisation d'un site existant. L'intervention portait sur les performances, le référencement naturel, l'accessibilité et la correction de problèmes fonctionnels.",
 
     objectives: [
-      'Améliorer le référencement naturel du site',
-      'Optimiser les performances',
-      'Améliorer l’accessibilité',
-      'Structurer correctement les informations destinées aux moteurs de recherche',
+      "Améliorer les performances du site",
+      "Optimiser le référencement naturel",
+      "Améliorer l'accessibilité",
+      "Corriger les bugs fonctionnels",
+    ],
+
+    optimizations: [
+      "Conversion et compression des images en WebP",
+      "Lazy loading des images secondaires",
+      "Optimisation du LCP",
+      "Chargement différé des scripts JavaScript",
+      "Amélioration de la structure HTML sémantique",
+      "Ajout de données structurées Schema.org",
+      "Ajout des métadonnées Open Graph",
+      "Amélioration des textes alternatifs",
+      "Correction des labels du formulaire",
     ],
 
     technicalStack: [
       {
-        name: 'SEO',
-        description:
-          'Optimisation des métadonnées, du contenu et de la structure du site pour améliorer son référencement.',
+        name: "SEO",
+        description: "Optimisation de la structure, des métadonnées et des données destinées aux moteurs de recherche.",
       },
       {
-        name: 'Open Graph',
-        description:
-          'Mise en place des métadonnées nécessaires au partage du site sur les réseaux sociaux.',
+        name: "Performance",
+        description: "Optimisation des images, du chargement des scripts et du Largest Contentful Paint.",
       },
       {
-        name: 'Schema.org',
-        description:
-          'Ajout de données structurées afin de fournir davantage de contexte aux moteurs de recherche.',
+        name: "Accessibilité",
+        description: "Amélioration des textes alternatifs, labels, structure sémantique et attributs ARIA.",
       },
       {
-        name: 'Performance',
-        description:
-          'Optimisation du chargement des ressources et des images.',
+        name: "Schema.org",
+        description: "Ajout de données structurées au format JSON-LD.",
+      },
+      {
+        name: "Open Graph",
+        description: "Optimisation des informations affichées lors du partage sur les réseaux sociaux.",
       },
     ],
 
     skills: [
-      'SEO technique',
-      'Accessibilité web',
-      'Optimisation des performances',
-      'Métadonnées',
-      'Données structurées',
-      'Optimisation des images',
+      "SEO technique",
+      "Web Performance",
+      "Accessibilité",
+      "HTML sémantique",
+      "Optimisation des images",
+      "Analyse avec Lighthouse",
+      "Debugging avec DevTools",
     ],
 
-    results: "Un site optimisé au niveau de sa structure, de ses métadonnées, de ses images et de différents aspects liés au référencement et à l'accessibilité.",
-    improvements: "Une évolution possible serait de poursuivre le suivi des performances et du référencement dans le temps afin d'identifier de nouvelles pistes d'optimisation.",
+    challenges: [
+      "Diagnostiquer les problèmes d'un projet existant",
+      "Identifier les causes des bugs avec les outils de développement",
+      "Réduire le poids des médias sans dégrader leur utilisation",
+      "Améliorer les performances tout en conservant le fonctionnement existant",
+    ],
+
+    results: {
+      performance: {
+        before: 64,
+        after: 100,
+      },
+      accessibility: {
+        before: 67,
+        after: 96,
+      },
+      seo: {
+        before: 73,
+        after: 100,
+      },
+      bestPractices: {
+        before: 100,
+        after: 100,
+      },
+    },
+    improvements: "Une évolution possible serait de poursuivre le suivi des performances, de l'accessibilité et du référencement afin d'identifier de nouvelles pistes d'optimisation.",
   },
 ];
 

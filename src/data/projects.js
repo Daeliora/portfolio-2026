@@ -5,11 +5,21 @@ const projects = [
     slug: 'booki',
     shortDescription: "Intégration responsive d'une interface de réservation de logements et d'activités à partir de maquettes desktop, tablette et mobile.",
     technologies: ['HTML', 'CSS', 'Responsive Design'],
-    image: '/images/booki-cover.webp',
+    
+    images: {
+      cover: '/images/projects/booki/cover.webp',
+      gallery: [
+        '/images/projects/booki/mobile.webp',
+        '/images/projects/booki/components.webp',
+      ],
+    },
+
     links: {
       github: 'https://github.com/Daeliora/P2-Booki',
     },
+
     context: "Projet d'intégration réalisé à partir de maquettes fournies pour les versions desktop, tablette et mobile. L'objectif était de transformer ces maquettes en une interface web cohérente, responsive et conforme aux spécifications du projet.",
+    
     objectives: [
       "Intégrer une interface à partir de maquettes UI",
       "Respecter les versions desktop, tablette et mobile",
@@ -74,10 +84,20 @@ const projects = [
     slug: 'sophie-bluel',
     shortDescription: "Développement d'une interface dynamique connectée à une API pour afficher, filtrer et administrer une galerie de projets.",
     technologies: ['JavaScript', 'API REST', 'DOM', 'Fetch'],
-    image: '/images/sophie-bluel-cover.webp',
+    
+    images: {
+      cover: '/images/projects/sophie-bluel/cover.webp',
+      gallery: [
+        '/images/projects/sophie-bluel/login.webp',
+        '/images/projects/sophie-bluel/home-editor.webp',
+        '/images/projects/sophie-bluel/modale.webp',
+      ],
+    },
+    
     links: {
       github: 'https://github.com/Daeliora/Portfolio-architecte-sophie-bluel',
     },
+    
     context: "Projet de développement JavaScript réalisé à partir d'un site initialement statique. L'objectif était de connecter l'interface à une API afin de rendre la galerie dynamique et de permettre à un administrateur de gérer les projets.",
     
     objectives: [
@@ -151,10 +171,20 @@ const projects = [
     slug: 'kasa',
     shortDescription: "Développement d'une application de location immobilière avec React, composants réutilisables et navigation dynamique.",
     technologies: ['React', 'React Router', 'Vite', 'JavaScript', 'Sass'],
-    image: '/images/kasa-cover.webp',
+    
+    images: {
+      cover: '/images/projects/kasa/cover.webp',
+      gallery: [
+        '/images/projects/kasa/logement.webp',
+        '/images/projects/kasa/a-propos.webp',
+        '/images/projects/kasa/error.webp',
+      ],
+    },
+
     links: {
       github: 'https://github.com/Daeliora/kasa',
     },
+
     context: "Projet de développement front-end réalisé avec React à partir de maquettes desktop et mobile. L'objectif était de construire une application moderne et responsive en organisant l'interface autour de composants réutilisables.",
 
     objectives: [
@@ -229,10 +259,22 @@ const projects = [
       'Multer',
       'Sharp',
     ],
-    image: '/images/mon-vieux-grimoire-cover.webp',
+    
+    images: {
+      cover: '/images/projects/mon-vieux-grimoire/cover.webp',
+      gallery: [
+        '/images/projects/mon-vieux-grimoire/signup.webp',
+        '/images/projects/mon-vieux-grimoire/ajout-livre.webp',
+        '/images/projects/mon-vieux-grimoire/ajout-success.webp',
+        '/images/projects/mon-vieux-grimoire/livre-note.webp',
+        '/images/projects/mon-vieux-grimoire/livre-delete.webp',
+      ],
+    },
+    
     links: {
       github: 'https://github.com/Daeliora/Mon-vieux-grimoire',
     },
+    
     context: "Projet back-end réalisé dans le cadre de ma formation. Le frontend React était fourni ; mon travail a consisté à développer l'API, la base de données, l'authentification, la gestion des images et le système de notation.",
 
     objectives: [
@@ -306,10 +348,20 @@ const projects = [
       'Bootstrap',
       'jQuery',
     ],
-    image: '/images/nina-carducci-cover.webp',
+    
+    images: {
+      cover: '/images/projects/nina-carducci/cover.webp',
+      gallery: [
+        '/images/projects/nina-carducci/lighthouse-final.webp',
+        '/images/projects/nina-carducci/modale.webp',
+        '/images/projects/nina-carducci/wave.webp',
+      ],
+    },
+    
     links: {
       github: 'https://github.com/Daeliora/P4_Nina-Carducci-WebSite',
     },
+    
     context: "Projet d'audit et d'optimisation d'un site existant. L'intervention portait sur les performances, le référencement naturel, l'accessibilité et la correction de problèmes fonctionnels.",
 
     objectives: [

@@ -2,6 +2,7 @@ import { useParams } from 'react-router';
 import projects from '../../data/projects';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import ProjectHero from '../../components/ProjectHero/ProjectHero';
+import ProjectGallery from '../../components/ProjectGallery/ProjectGallery';
 
 function ProjectPage() {
   const { slug } = useParams();
@@ -21,6 +22,8 @@ function ProjectPage() {
   return (
   <main>
     <ProjectHero project={project} />
+    
+    <ProjectGallery project={project} />
 
     <section>
       <SectionTitle>Contexte</SectionTitle>

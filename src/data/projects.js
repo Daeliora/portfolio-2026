@@ -357,7 +357,7 @@ const projects = [
       cover: '/images/projects/nina-carducci/cover.webp',
       gallery: [
         '/images/projects/nina-carducci/cover.webp',
-        '/images/projects/nina-carducci/lighthouse-final.webp',
+        '/images/projects/nina-carducci/lighthouse-finale.webp',
         '/images/projects/nina-carducci/modale.webp',
         '/images/projects/nina-carducci/wave.webp',
       ],

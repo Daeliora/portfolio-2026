@@ -1,8 +1,8 @@
 import { useParams } from 'react-router';
 import projects from '../../data/projects';
-import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import ProjectHero from '../../components/ProjectHero/ProjectHero';
 import ProjectGallery from '../../components/ProjectGallery/ProjectGallery';
+import ProjectSection from '../../components/ProjectSection/ProjectSection';
 
 function ProjectPage() {
   const { slug } = useParams();
@@ -22,21 +22,37 @@ function ProjectPage() {
   return (
   <main>
     <ProjectHero project={project} />
-    
+
     <ProjectGallery project={project} />
 
-    <section>
-      <SectionTitle>Contexte</SectionTitle>
+    <ProjectSection title="Contexte">
       <p>{project.context}</p>
-    </section>
+    </ProjectSection>
 
-    <section>
-      <SectionTitle>Objectifs</SectionTitle>
-
+    <ProjectSection title="Objectifs">
       <ul>
-        {project.objectives.map((objective) => (<li key={objective}>{objective}</li>))}
+        {project.objectives.map((objective) => (
+          <li key={objective}>{objective}</li>
+        ))}
       </ul>
-    </section>
+    </ProjectSection>
+
+    {project.features && (
+      <ProjectSection title="Fonctionnalités">
+        <ul>
+          {project.features.map((feature) => (
+            <li key={feature}>{feature}</li>
+          ))}
+        </ul>
+      </ProjectSection>
+    )}
+
+    {project.optimizations && (
+      <ProjectSection title="Optimisations">
+        ...
+      </ProjectSection>
+    )}
+
   </main>
 );
 }

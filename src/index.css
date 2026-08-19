@@ -101,8 +101,7 @@ img {
   transform: scaleX(1);
 }
 
-/*--------------------------------------------------------------------------------------*/
-
+/*--------------------------------------------*/
 @media (max-width: 768px) {
   .project-hero {
     padding: 7rem 1.5rem 4rem;
@@ -132,7 +131,7 @@ img {
 }
 
 .project-gallery__main img {
-  width: 100%;
+  width: auto;
   height: 100%;
   object-fit: cover;
 }
@@ -245,8 +244,7 @@ img {
   content: '';
 }
 
-/*--------------------------------------------------*/
-
+/*-----------------------------------------------*/
 @media (max-width: 768px) {
   .project-section {
     grid-template-columns: 1fr;
@@ -259,7 +257,7 @@ img {
   }
 }
 
-/*----------------------------------Technical Stack----------------------------------------------------*/ 
+/*------------------------------------------Technical Stack-----------------------------------------*/ 
 
 .technical-stack {
   display: flex;
@@ -292,7 +290,7 @@ img {
   line-height: 1.6;
 }
 
-/*----------------------------------ProjectSkills----------------------------------------*/
+/*-------------------------------------ProjectSkills----------------------------------------*/
 
 .project-skills {
   display: flex;
@@ -349,7 +347,6 @@ img {
 }
 
 /*--------------------------------------------*/
-
 @media (max-width: 768px) {
   .project-challenges__item {
     grid-template-columns: 2.5rem 1fr;
@@ -357,7 +354,7 @@ img {
   }
 }
 
-/*----------------------------------------ProjectResults----------------------------------------*/
+/*-----------------------------------------ProjectResults-----------------------------------------*/
 
 .project-results {
   max-width: 650px;
@@ -415,5 +412,96 @@ img {
   .lighthouse-results__item {
     grid-template-columns: 1fr;
     gap: 0.75rem;
+  }
+}
+
+/*----------------------------------Project Responsive----------------------------------------------------*/
+
+@media (max-width: 900px) {
+  .project-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-section__title h2 {
+    font-size: clamp(2.5rem, 7vw, 3.5rem);
+  }
+
+  .technical-stack__item {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-hero {
+    padding: 6rem 1.25rem 3.5rem;
+  }
+
+  .project-hero h1 {
+    font-size: clamp(3rem, 17vw, 5rem);
+  }
+
+  .project-hero__technologies {
+    margin-bottom: 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  .project-hero__description {
+    margin: 1.75rem 0 2rem;
+    font-size: 1rem;
+  }
+
+  .project-gallery {
+    padding: 0 1.25rem 4rem;
+  }
+
+  .project-gallery__main {
+    height: 60vw;
+    min-height: 220px;
+  }
+
+  .project-section {
+    gap: 1.5rem;
+    padding: 3.5rem 1.25rem;
+  }
+
+  .project-section__title h2 {
+    font-size: clamp(2.25rem, 12vw, 3rem);
+  }
+
+  .project-section__content p {
+    font-size: 0.95rem;
+  }
+
+  .project-skills {
+    gap: 0.5rem;
+  }
+
+  .project-skills__item {
+    padding: 0.55rem 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  .project-challenges__item {
+    grid-template-columns: 2rem 1fr;
+    gap: 0.75rem;
+    padding: 1.5rem 0;
+  }
+
+  .project-challenges__number {
+    font-size: 0.75rem;
+  }
+
+  .project-challenges__item p {
+    font-size: 0.95rem;
+  }
+
+  .lighthouse-results__item {
+    padding: 1.25rem 0;
+  }
+
+  .lighthouse-results__scores strong {
+    font-size: 1.3rem;
   }
 }

@@ -10,7 +10,8 @@ const projects = [
       cover: '/images/projects/booki/cover.webp',
       gallery: [
         '/images/projects/booki/cover.webp',
-        '/images/projects/booki/mobile.webp',
+        '/images/projects/booki/homepage.webp',
+        '/images/projects/booki/responsive.webp',
         '/images/projects/booki/components.webp',
       ],
     },
@@ -90,6 +91,7 @@ const projects = [
       cover: '/images/projects/sophie-bluel/cover.webp',
       gallery: [
         '/images/projects/sophie-bluel/cover.webp',
+        '/images/projects/sophie-bluel/homepage.webp',
         '/images/projects/sophie-bluel/login.webp',
         '/images/projects/sophie-bluel/home-editor.webp',
         '/images/projects/sophie-bluel/modale.webp',
@@ -178,6 +180,7 @@ const projects = [
       cover: '/images/projects/kasa/cover.webp',
       gallery: [
         '/images/projects/kasa/cover.webp',
+        '/images/projects/kasa/homepage.webp',
         '/images/projects/kasa/logement.webp',
         '/images/projects/kasa/a-propos.webp',
         '/images/projects/kasa/error.webp',
@@ -267,6 +270,7 @@ const projects = [
       cover: '/images/projects/mon-vieux-grimoire/cover.webp',
       gallery: [
         '/images/projects/mon-vieux-grimoire/cover.webp',
+        '/images/projects/mon-vieux-grimoire/homepage.webp',
         '/images/projects/mon-vieux-grimoire/signup.webp',
         '/images/projects/mon-vieux-grimoire/ajout-livre.webp',
         '/images/projects/mon-vieux-grimoire/ajout-success.webp',
@@ -357,6 +361,7 @@ const projects = [
       cover: '/images/projects/nina-carducci/cover.webp',
       gallery: [
         '/images/projects/nina-carducci/cover.webp',
+        '/images/projects/nina-carducci/homepage.webp',
         '/images/projects/nina-carducci/lighthouse-finale.webp',
         '/images/projects/nina-carducci/modale.webp',
         '/images/projects/nina-carducci/wave.webp',

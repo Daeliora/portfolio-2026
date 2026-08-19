@@ -1,7 +1,7 @@
 const projects = [
 
   {
-    title: 'Booki',
+    title: 'Booki', /*------------------------------------------------------------------------------*/
     slug: 'booki',
     shortDescription: "Intégration responsive d'une interface de réservation de logements et d'activités à partir de maquettes desktop, tablette et mobile.",
     technologies: ['HTML', 'CSS', 'Responsive Design'],
@@ -81,7 +81,7 @@ const projects = [
   },
 
   {
-    title: 'Sophie Bluel',
+    title: 'Sophie Bluel',  /*----------------------------------------------------------------------*/
     slug: 'sophie-bluel',
     shortDescription: "Développement d'une interface dynamique connectée à une API pour afficher, filtrer et administrer une galerie de projets.",
     technologies: ['JavaScript', 'API REST', 'DOM', 'Fetch'],
@@ -169,7 +169,7 @@ const projects = [
   },
 
   {
-    title: 'Kasa',
+    title: 'Kasa',  /*-----------------------------------------------------------------------------*/
     slug: 'kasa',
     shortDescription: "Développement d'une application de location immobilière avec React, composants réutilisables et navigation dynamique.",
     technologies: ['React', 'React Router', 'Vite', 'JavaScript', 'Sass'],
@@ -250,7 +250,7 @@ const projects = [
   },
 
   {
-    title: 'Mon Vieux Grimoire',
+    title: 'Mon Vieux Grimoire',  /*----------------------------------------------------------------*/
     slug: 'mon-vieux-grimoire',
     shortDescription: "Développement d'une API REST sécurisée pour une application de partage et de notation de livres.",
     technologies: [
@@ -341,7 +341,7 @@ const projects = [
   },
 
   {
-    title: 'Nina Carducci',
+    title: 'Nina Carducci', /*----------------------------------------------------------------------*/
     slug: 'nina-carducci',
     shortDescription: "Audit et optimisation d'un site existant autour de la performance, du SEO, de l'accessibilité et de la correction de bugs.",
     technologies: [

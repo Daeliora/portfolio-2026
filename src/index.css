@@ -661,11 +661,40 @@ img {
 /*----------------------------------Home Hero----------------------------------------------------*/
 
 .home-hero {
-  min-height: 100vh;
+  position: relative;
+  min-height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 8rem 6vw 6rem;
+  overflow: hidden;
+  background-color: var(--color-surface);
+  color: var(--color-text-light);
+}
+
+.home-hero::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('/images/background/background-hero.webp');
+  background-position: center;
+  background-size: cover;
+  content: '';
+}
+
+.home-hero::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+
+.home-hero h1,
+.home-hero__statement,
+.home-hero__cta {
+  position: relative;
+  z-index: 2;
 }
 
 .home-hero h1 {
@@ -682,21 +711,48 @@ img {
   margin: 3rem 0 0;
   font-size: 1.25rem;
   line-height: 1.5;
+  color: var(--color-text-secondary);
 }
 
-.home-hero__description {
-  max-width: 600px;
-  margin: 2rem 0 0;
-  color: var(--color-text-secondary);
-  font-size: 1rem;
-  line-height: 1.6;
+.home-hero__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  margin-top: 2.5rem;
+  padding: 0.8rem 1.25rem;
+  border-radius: 4px;
+  background-color: var(--color-accent);
+  color: var(--color-text-light);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition:
+    background-color 200ms ease,
+    transform 200ms ease;
+}
+
+.home-hero__cta:hover,
+.home-hero__cta:focus-visible {
+  background-color: #d95726;
+  transform: translateY(-2px);
 }
 
 /*----------------------------------------*/
+
 @media (max-width: 768px) {
   .home-hero {
-    min-height: 100svh;
+    min-height: calc(100svh - 60px);
     padding: 7rem 1.5rem 4rem;
+  }
+
+  .home-hero::before {
+    background-position: center;
+  }
+
+  .home-hero::after {
+    background: rgba(0, 0, 0, 0.25);
   }
 
   .home-hero h1 {
@@ -708,12 +764,12 @@ img {
     font-size: 1rem;
   }
 
-  .home-hero__description {
-    margin-top: 2rem;
-    font-size: 0.85rem;
-  }
+  .home-hero__cta {
+  margin-top: 2rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.7rem;
 }
-
+}
 
 /*----------------------------------Home Projects----------------------------------------------------*/
 

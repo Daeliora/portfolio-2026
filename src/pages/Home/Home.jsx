@@ -10,13 +10,12 @@ function Home() {
         <h1>Développeuse web</h1>
 
         <p className="home-hero__statement">
-          Je crée des expériences web qui ont du caractère.
+          Je conçois des expériences web modernes, accessibles et fonctionnelles avec JavaScript & React.
         </p>
 
-        <p className="home-hero__description">
-          Développeuse front-end et back-end, je conçois des interfaces
-          modernes, accessibles et fonctionnelles.
-        </p>
+        <a className="home-hero__cta" href="#projets">
+          [ DÉCOUVRIR MES PROJETS ↘ ]
+        </a>
       </section>
 
       <AboutSection />

@@ -124,6 +124,8 @@ img {
 }
 
 .project-gallery__main {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: min(65vw, 700px);
   margin: 0;
@@ -133,7 +135,7 @@ img {
 .project-gallery__main img {
   width: auto;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* ou object-fit: contain; */
 }
 
 .project-gallery__controls {

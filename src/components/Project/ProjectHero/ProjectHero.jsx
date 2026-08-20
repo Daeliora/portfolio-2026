@@ -1,11 +1,11 @@
 function ProjectHero({ project }) {
   return (
     <header className="project-hero">
+      <h1>{project.title}</h1>
+
       <p className="project-hero__technologies">
         {project.technologies.join(' · ')}
       </p>
-
-      <h1>{project.title}</h1>
 
       <p className="project-hero__description">
         {project.shortDescription}

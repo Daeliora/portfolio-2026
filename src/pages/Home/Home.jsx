@@ -1,6 +1,7 @@
 import projects from '../../data/projects';
 import ProjectCard from '../../components/Project/ProjectCard/ProjectCard';
 import AboutSection from '../../components/Section/AboutSection';
+import SkillsSection from '../../components/Section/SkillsSection';
 import ContactSection from '../../components/Section/ContactSection';
 
 function Home() {
@@ -20,6 +21,8 @@ function Home() {
 
       <AboutSection />
 
+      <SkillsSection />
+      
       <section className="home-projects" id="projets">
         <div className="home-projects__header">
           <h2>Projets</h2>

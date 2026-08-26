@@ -25,19 +25,19 @@ function MobileMenu() {
       {isOpen && (
         <nav className="mobile-menu__panel" aria-label="Navigation mobile">
           <Link to="/" onClick={closeMenu}>
-            Accueil
+            -Accueil-
           </Link>
 
           <a href="/#projets" onClick={closeMenu}>
-            Projets
+            -Projets-
           </a>
 
           <a href="/#a-propos" onClick={closeMenu}>
-            À propos
+            -À propos-
           </a>
 
           <a href="/#contact" onClick={closeMenu}>
-            Contact
+            -Contact-
           </a>
         </nav>
       )}

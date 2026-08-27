@@ -8,6 +8,14 @@ function MobileMenu() {
     setIsOpen(false);
   };
 
+  const handleHomeClick = () => {
+    setIsOpen(false);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className="mobile-menu">
       <button
@@ -24,7 +32,7 @@ function MobileMenu() {
 
       {isOpen && (
         <nav className="mobile-menu__panel" aria-label="Navigation mobile">
-          <Link to="/" onClick={closeMenu}>
+          <Link to="/" onClick={handleHomeClick}>
             -Accueil-
           </Link>
 

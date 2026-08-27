@@ -14,7 +14,7 @@ function ContactSection() {
           UNE OPPORTUNITÉ ?
         </p>
 
-        <a href="mailto: elodie.chancerel.44@gmail.com">
+        <a href="mailto:elodie.chancerel.44@gmail.com">
           Parlons-en. ↗
         </a>
 

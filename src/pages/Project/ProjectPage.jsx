@@ -52,10 +52,6 @@ function ProjectPage() {
       </ProjectSection>
     )}
 
-    <ProjectSection title="Stack technique">
-      <TechnicalStack stack={project.technicalStack} />
-    </ProjectSection>
-
     {project.optimizations && (
       <ProjectSection title="Optimisations">
         <ProjectOptimizations
@@ -63,6 +59,10 @@ function ProjectPage() {
         />
       </ProjectSection>
     )}
+
+    <ProjectSection title="Stack technique">
+      <TechnicalStack stack={project.technicalStack} />
+    </ProjectSection>
 
     <ProjectSection title="Compétences">
       <ProjectSkills skills={project.skills} />

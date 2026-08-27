@@ -17,7 +17,7 @@ function ProjectHero({ project }) {
           target="_blank"
           rel="noreferrer"
         >
-          Voir le code sur GitHub ↗
+          Voir sur GitHub ↗
         </a>
       )}
     </header>

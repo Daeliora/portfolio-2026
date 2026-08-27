@@ -52,44 +52,67 @@ img {
   scroll-margin-top: var(--navbar-height);
 }
 
+/*----------------------------------Porject page----------------------------------------------------*/
 
-.project-hero {
-  padding: 10rem 6vw 3rem;
-  background-color: var(--color-background);
+.project-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--beige);
 }
 
-.project-hero__technologies {
-  margin: 2rem 0 2rem;
-  color: var(--color-text-secondary);
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+/*----------------------------------Project Hero----------------------------------------------------*/
+
+.project-hero {
+  padding: 100px 30px 30px;
 }
 
 .project-hero h1 {
+  position: relative;
   margin: 0;
-  color: var(--color-text);
-  font-family: var(--font-display);
-  font-size: clamp(4.5rem, 7vw, 7rem);
+  color: var(--color-green);
+  font-family: var(--font-body);
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 0.9;
+  padding-bottom: 8px;
+  width: fit-content;
 }
 
+.project-hero__technologies {
+  margin: 20px 0 10px 0;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.project-hero h1::after {
+    position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 200px;
+  height: 1px;
+  background-color: var(--color-green);
+  content: '';
+  }
+
 .project-hero__description {
-  max-width: 600px;
-  margin: 2rem 0 2rem;
-  font-size: 1.125rem;
+  margin: 0;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .project-hero a {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin-top: -20px;
+  margin-left: auto;
   padding-bottom: 0.35rem;
-  color: var(--color-text);
-  font-size: 0.875rem;
-  font-weight: 500;
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .project-hero a::after {
@@ -97,7 +120,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 2px;
+  height: 1px;
   background-color: var(--color-accent);
   content: '';
   transform: scaleX(0);
@@ -113,26 +136,49 @@ img {
 /*--------------------------------------------*/
 @media (max-width: 768px) {
   .project-hero {
-    padding: 7rem 1.5rem 4rem;
+    padding: 6rem 1.5rem 2rem;
+  }
+
+  .project-hero h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 8px;
+  }
+
+  .project-hero h1::after {
+    width: 190px;
+  }
+
+  .project-hero__technologies {
+    margin: 20px 0 10px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
   }
 
   .project-hero__description {
-    margin-top: 1rem;
-    font-size: 1rem;
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .project-hero a {
+    margin-top: 25px;
+    font-size: 1.2rem;
   }
 }
 
 /*----------------------------------Gallery----------------------------------------------------*/
 
 .project-gallery {
-  padding: 0 6vw 4rem;
+  padding: 0 3vw 3rem;
 }
 
 .project-gallery__main {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: min(65vw, 700px);
+  height: min(65vw, 560px);
   margin: 0;
   overflow: hidden;
 }
@@ -140,14 +186,14 @@ img {
 .project-gallery__main img {
   width: auto;
   height: 100%;
-  object-fit: cover; /* ou object-fit: contain; */
+  object-fit: contain; /* ou object-fit: cover; */
 }
 
 .project-gallery__controls {
   display: flex;
   justify-content: center;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
+  gap: 3rem;
+  margin-top: 2rem;
 }
 
 .project-gallery__dot {
@@ -184,12 +230,16 @@ img {
 
 /*--------------------------------------------------*/
 @media (max-width: 768px) {
+  .project-gallery {
+    padding: 0 0 3rem;
+  }
+
   .project-gallery__main {
-    height: 65vw;
+    height: 70vw;
   }
 
   .project-gallery__controls {
-    margin-top: 1rem;
+    gap: 2rem;
   }
 }
 
@@ -437,35 +487,7 @@ img {
 }
 
 @media (max-width: 600px) {
-  .project-hero {
-    padding: 6rem 1.25rem 3.5rem;
-  }
 
-  .project-hero h1 {
-    font-size: clamp(3rem, 10vw, 5rem);
-  }
-
-  .project-hero__technologies {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 0.7rem;
-  }
-
-  .project-hero__description {
-    margin: 1.75rem 0 2rem;
-    font-size: 1rem;
-  }
-
-  .project-gallery {
-    padding: 0 1.25rem 2.5rem;
-  }
-
-  .project-gallery__main {
-    height: 60vw;
-    min-height: 220px;
-  }
-
-  /*-----------------------------*/
   .project-section {
     grid-template-columns: 1fr;
     gap: 1rem;

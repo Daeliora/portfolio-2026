@@ -245,14 +245,19 @@ img {
 
 /*----------------------------------Project Section----------------------------------------------------*/
 
-main > .project-section:nth-of-type(2),
-main > .project-section:nth-of-type(4),
-main > .project-section:nth-of-type(6) {
+main > .project-section:nth-of-type(2),         /*contexte*/
+main > .project-section:nth-of-type(4),         /*optimisations / fonctionnalités*/
+main > .project-section:nth-of-type(7) {        /*défis*/
   background-color: var(--color-surface);
   color: var(--color-text-light);
 }
 
-main > .project-section:nth-of-type(8) {
+main > .project-section:nth-of-type(6) {        /*compétences*/
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-light);
+}
+
+main > .project-section:nth-of-type(8) {        /*résultats*/
   background-color: var(--color-green);
   color: var(--color-text-light);
 }
@@ -261,7 +266,7 @@ main > .project-section:nth-of-type(8) {
   display: grid;
   grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1fr);
   gap: 4rem;
-  padding: 5rem 6vw;
+  padding: 3rem 6vw;
   border-top: 1px solid var(--color-border);
 }
 
@@ -347,6 +352,61 @@ main > .project-section:nth-of-type(8) {
   }
 }
 
+/*---------------------------------------Optimizations Section--------------------------------------*/  
+
+.project-optimizations {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  counter-reset: optimization;
+}
+
+.project-optimizations li {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 2rem;
+  padding: 1.5rem 0 0 0;
+  border-top: 1px solid var(--color-border);
+  line-height: 1.6;
+  margin-left: -160px;
+}
+
+.project-optimizations li::before {
+  position: static;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+  counter-increment: optimization;
+  content: counter(optimization, decimal-leading-zero);
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.project-optimizations li:last-child {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .project-optimizations li {
+    font-size: 0.95rem;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem 0 0 0;
+    margin-left: 0;
+  }
+  .project-optimizations li::before {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .project-optimizations li:last-child {
+    padding-bottom: 0.4rem;
+  }
+}
+
 /*------------------------------------------Technical Stack-----------------------------------------*/ 
 
 .technical-stack {
@@ -411,7 +471,7 @@ main > .project-section:nth-of-type(8) {
   display: inline-flex;
   align-items: center;
   padding: 0.65rem 1rem;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-text-light);
   border-radius: 999px;
   font-size: 0.9rem;
 }
@@ -547,6 +607,7 @@ main > .project-section:nth-of-type(8) {
   }
 }
 
+/*--------------------------------------------------------------------------------------------*/
 /*----------------------------------Navbar----------------------------------------------------*/
 
 .navbar {
@@ -614,6 +675,7 @@ main > .project-section:nth-of-type(8) {
   }
 }
 
+/*-------------------------------------------------------------------------------------------------*/
 /*----------------------------------Mobile Menu----------------------------------------------------*/
 
 .mobile-menu {
@@ -675,6 +737,7 @@ main > .project-section:nth-of-type(8) {
   }
 }
 
+/*-----------------------------------------------------------------------------------------------*/
 /*----------------------------------Home Hero----------------------------------------------------*/
 
 .home-hero {

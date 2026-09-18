@@ -139,13 +139,18 @@ img {
 /*--------------------------------------------*/
 @media (max-width: 768px) {
   .project-hero {
-    padding: 6rem 1.5rem 2rem;
+    padding: calc(var(--navbar-height) + 1.5rem) 1.5rem 2rem;
   }
 
   .project-hero h1 {
   font-size: 1.5rem;
   font-weight: 400;
   padding-bottom: 8px;
+  }
+
+  .project-hero h1::after {
+    right: 0;
+    width: 220px;
   }
 
   .project-hero__technologies {
@@ -320,8 +325,8 @@ main > .project-section:nth-of-type(8) {        /*résultats*/
 @media (max-width: 768px) {
   .project-section {
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1.5rem 1.5rem;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .project-section__title h2 {
@@ -442,8 +447,9 @@ main > .project-section:nth-of-type(8) {        /*résultats*/
 @media (max-width: 768px) {
   .technical-stack__item {
     grid-template-columns: 1fr;
-    gap: 0.5rem;
-    padding: 0.6rem 0;
+    gap: 0.75rem;
+    padding: 1rem 0;
+    font-size: 0.95rem;
   }
 
   .technical-stack__item h3 {
@@ -490,9 +496,10 @@ main > .project-section:nth-of-type(8) {        /*résultats*/
 
 .project-challenges__item {
   display: grid;
-  grid-template-columns: 4rem 1fr;
-  gap: 2rem;
-  padding: 2rem 0;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  font-size: 0.95rem;
   border-top: 1px solid var(--color-border);
 }
 
@@ -603,17 +610,17 @@ main > .project-section:nth-of-type(8) {        /*résultats*/
     gap: 0;
   }
   .lighthouse-results__item {
-    padding: 1.25rem 0;
+    padding: 0.75rem 0;
   }
   .lighthouse-results__scores strong {
     font-size: 1rem;
   }
   .lighthouse-results__item h3 {
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
   font-size: 0.9rem;
   text-transform: uppercase;
   justify-self: center;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
   }
   .lighthouse-results__scores {
     margin-left: 0.5rem;
